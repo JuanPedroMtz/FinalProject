@@ -11,6 +11,8 @@ On the Ventas_linea.csv we first filtered all the branches that generate transac
 After that, we dropped all the false values within our data frame. Likewise, we split some combined (strings and integers) into two separate columns .
 Then, we removed all the values from our description column that are not phones, such as: Screen protectors, USB flash drives, Power Adapters, SIM cards, Cases, cables, tablets, earphones, etc.
 
+The transformation process of the pdv_lineas.csv file first consisted in the filtering of all the branchesm, so that we kept only the strings that started with "SUC". After that we searched for "False" values inside the dataframe, if those values were found they would be eliminated of the datarame. Once the data was cleaned, one column was splited into two separate columns in order o differentiate the information and manage it better. The final transformation to the dataframe was the filtering of the products by its description, this because we only are working with phones. 
+
 Likewise, we performed similar activities with the Stock move.csv file.
 
 #### Results
