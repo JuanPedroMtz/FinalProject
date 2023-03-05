@@ -10,9 +10,8 @@ Basically, we had 5 different csv files with data that we will have to analyze f
 Each team member will be assigned to analyze and clean one data base to further merge them together using PostgreSQL.
 
 
-This is the main database, in which we will base and connect the other databases. This is a database with all the products and categories that we want to model. With it we will filter the information we want from the other databases. The objective was to clean it, obtain just the categories that are meaningful to obtain and optimal inventory, and finnaly to drop duplicates. In this database we filtered all the categories to just have 'DISPOSITIVO / CELULAR / LIBRE' and 'DISPOSITIVO / CELULAR / TELCEL', so we just have those to start making our models. 
+The productos.csv databaser is the main database, in which we will base and connect the other databases. This is a database with all the products and categories that we want to model. With it we will filter the information we want from the other databases. The objective was to clean it, obtain just the categories that are meaningful to obtain and optimal inventory, and finnaly to drop duplicates. In this database we filtered all the categories to just have 'DISPOSITIVO / CELULAR / LIBRE' and 'DISPOSITIVO / CELULAR / TELCEL', so we just have those to start making our models. 
 
-The analysis and cleaning process on Product.csv is where we will be able to query data from the rest of the tables. It includes all the products and categories that we want to model. Consequently, we will filter the information we want to show in the consolidated database. The objective is to clean, transform the data, and obtain the primary keys to farther merge the remaining tables.
 
 On the Ventas_linea.csv we first filtered all the branches that generate transactions. Therefore, we kept only the strings that started with “SUC” (it means branch in Spanish).
 After that, we dropped all the false values within our data frame. Likewise, we split some combined (strings and integers) into two separate columns.
