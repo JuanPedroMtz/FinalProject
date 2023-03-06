@@ -1,4 +1,4 @@
-id,Product_ID,Description,order_id,product_uom_qty,create_uid,price_unit,price_subtotal
+id,Product_ID,Description,order_id,qty,create_uid,price_unit,price_subtotal
 58138,30358,'HONOR X6 4/64 PLATA',S21076,1.0,SUC. PARQUE (QRO),3102.58,3102.58
 58135,30980,'MOTO G22 4/128 AZUL',S21075,1.0,SUC. GUERRERO (QRO),3878.45,3878.45
 58132,26585,'MOTO G22 4/128 NEGRO',S21074,1.0,SUC. LA VICTORIA (QRO),3533.62,3533.62
