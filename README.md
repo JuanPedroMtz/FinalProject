@@ -23,4 +23,17 @@ Likewise, we performed similar activities with the Stock move.csv file, such as,
 
 On the Almacenes (2).csv which is a data base that shows the 30 stores along with the main distribution center what we did was clean the information firstly by making sure that the stores where just shown once in data base, each store could have multiple locations depending on the status of the product. So what we did afterwards was split the string which looked like this [8, 'WCENT/Existencias'] and dividing it in the 2 different columns that we need , firstly the number which is the id of my location which will help us connect to the other data bases in the course of the project and then the name of that location so we could identify them in a more easy way.
 
+### Description of the communication protocols
+SInce day 1, our team has created a whatsapp group where we use to communicate to each other in daily basis and we keep everyone on the loop of this project's progress. Likewise, we established a weekly meeting schedule which consists in having team meetings via zoom every Tuesday, Thrusday and Sunday night to keep working on our project. 
+In addition to that, we are using google drive to share some important documantation, as well as we have created an indiviual branch in our github final project repository. 
+After every Thrusday meeting we establish short term goals for each team member to be accompish by our Sunday meeting. 
 
+### Outline of the project 
+(this may include images, but should be easy to follow and 
+digest)
+
+### Machine Learning Model
+#### Description of preliminary data preprocessing 
+#### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+#### Description of how data was split into training and testing sets 
+#### Explanation of model choice, including limitations and benefits 
