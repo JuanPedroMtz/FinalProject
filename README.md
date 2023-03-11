@@ -33,7 +33,10 @@ After every Thrusday meeting we establish short term goals for each team member 
 digest)
 
 ### Machine Learning Model
-#### Description of preliminary data preprocessing 
+#### Data
+Once the all the tables were created, PostgreSQL was used for the creation of the database and the merge between all the tables to create the machine learning model. The csv file almacenes_ventas was selected to apply our machine learning model to it.
+
 #### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+
 #### Description of how data was split into training and testing sets 
 #### Explanation of model choice, including limitations and benefits 
