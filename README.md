@@ -34,10 +34,10 @@ digest)
 
 ### Machine Learning Model
 #### Data
-Once the all the tables were created, PostgreSQL was used for the creation of the database and the merge between all the tables to create the machine learning model. The csv file almacenes_ventas was selected to apply our machine learning model to it. 
+Once the all the tables were created, PostgreSQL was used for the creation of the database and the merge between all the tables to create the table used for the machine learning model. The csv file almacenes_ventas was selected to apply our machine learning model to it. 
 
 #### Feature and Target selection 
 The almacenes_ventas file was imported to jupyter notebook and the table was filtered to obtain the features and targets. The selected features were 'name', 'brand', 'month', 'qty' and 'price_unit'. The purpose of the machine learning model is to create an approximation of the total sales for the next year, so 'total_sales' was selected as our target.  
 
 #### Explanation of model choice, including limitations and benefits 
-The chosen model was an approximation model that employs logistic regression.
+The chosen model was an approximation model, we are using linear regressio, logistic regression and proposing the use of ARIMA fot he sales forecast.
