@@ -19,25 +19,21 @@ Then, we removed all the values from our description column that are not phones,
 
 The transformation process of the pdv_lineas.csv file first consisted in the filtering of all the branches, so that we kept only the strings that started with "SUC". After that we searched for "False" values inside the data frame, if those values were found they would be eliminated of the data frame. Once the data was cleaned, one column was split into two separate columns in order o differentiate the information and manage it better. The final transformation to the data frame was the filtering of the products by its description, this because we only are working with phones. 
 
-Likewise, we performed similar activities with the Stock move.csv file, such as, we filter for false values inside data frames, split columns, drop null values and filter only for phone devices in de description column.
-
 On the Almacenes (2).csv which is a data base that shows the 30 stores along with the main distribution center what we did was clean the information firstly by making sure that the stores where just shown once in data base, each store could have multiple locations depending on the status of the product. So what we did afterwards was split the string which looked like this [8, 'WCENT/Existencias'] and dividing it in the 2 different columns that we need , firstly the number which is the id of my location which will help us connect to the other data bases in the course of the project and then the name of that location so we could identify them in a more easy way.
 
+Once each one of the tables were created, PostgreSQL was used to create and manage a database, and to merge all the tables in a single one to train the Machine Learning model, the final tables was named "ventas_almacenes". This final table was exported from PostgreSQL and modified using Jupyter Notebook to create the "final_ventas.csv". 
+
 ### Description of the communication protocols
-SInce day 1, our team has created a whatsapp group where we use to communicate to each other in daily basis and we keep everyone on the loop of this project's progress. Likewise, we established a weekly meeting schedule which consists in having team meetings via zoom every Tuesday, Thrusday and Sunday night to keep working on our project. 
+Since day 1, our team has created a whatsapp group where we use to communicate to each other in daily basis and we keep everyone on the loop of this project's progress. Likewise, we established a weekly meeting schedule which consists in having team meetings via zoom every Tuesday, Thrusday and Sunday night to keep working on our project. 
 In addition to that, we are using google drive to share some important documantation, as well as we have created an indiviual branch in our github final project repository. 
 After every Thrusday meeting we establish short term goals for each team member to be accompish by our Sunday meeting. 
 
-### Outline of the project 
-(this may include images, but should be easy to follow and 
-digest)
-
 ### Machine Learning Model
-#### Data
-Once the all the tables were created, PostgreSQL was used for the creation of the database and the merge between all the tables to create the table used for the machine learning model. The csv file almacenes_ventas was selected to apply our machine learning model to it. 
+To make predictions for ideal inventory per phone brand, per branch and per month, we will need to prepare the data in a way that includes the month, branch, phone brand, and current inventory levels as features, and the target variable will be the ideal inventory levels.
 
-#### Feature and Target selection 
-The almacenes_ventas file was imported to jupyter notebook and the table was filtered to obtain the features and targets. The selected features were 'name', 'brand', 'month', 'qty' and 'price_unit'. The purpose of the machine learning model is to create an approximation of the total sales for the next year, so 'total_sales' was selected as our target.  
+#### Data and Machine Learning model application
+The Machine Learning model employeed for our project was an Approximation model in order to predict the amount of cellphones that a branch would sell in the future. The "final_ventas.csv" file included 6 columns "name", "brand", "month", "qty", "price_unit", and "total_sales"; the first three columns were encoded using the "pd.get_dummies()", this in order to give only numerical information to our model. All the encoded data columns were renamed and the dataframe employeed was divided into and X and y dataframe. 
+
+The input features defined for this model were "name", "brand", "month", while the target variable was qty.
 
 #### Explanation of model choice, including limitations and benefits 
-The chosen model was an approximation model, we are using linear regressio, logistic regression and proposing the use of ARIMA fot he sales forecast.
