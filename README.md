@@ -75,3 +75,7 @@ It's always a good idea to evaluate a model using multiple metrics and compare t
 Overall, these results suggest that your XGBoost regression model is performing well and is able to make relatively accurate predictions on the test data. However, it's always important to consider the specific context and goals of your project when interpreting these metrics and evaluating your model's performance.
 
 To improve the resulst of each of these models, more data could be necessary. It's important to point out that the data used were limited to a short amont of time, so if we would like to improve the results of our model more data could help us to improve the overall results.
+
+#### Visualizations:
+All the visualizations created from the data generated in our models can be find in:
+https://public.tableau.com/app/profile/emilio.segura/viz/Dimovil_Bootcamp/Dashboard1?publish=yes
