@@ -64,7 +64,9 @@ This algorithm builds a large number of decision trees and combines their predic
 
 •	The R-squared value is 0.6761627333383604, this value explains to what extent the variance of one variable explains the variance of the second variable. So, in this case the value is positive but it is still far from being a good result to use in a prediction model.
 
-![image](https://github.com/JuanPedroMtz/FinalProject/blob/main/Resources/Random%20Forest%20Regression.png)
+<p align="center">
+  <img src="https://github.com/JuanPedroMtz/FinalProject/blob/main/Resources/Random%20Forest%20Regression.png" />
+</p>
 
 #### XGBoost Regression: 
 It is an implementation of machine learning algorithms under the Gradient Boosting framework. XGBoost provides a parallel tree boosting. The implemented model used a 'reg:squarederror' solver.
@@ -75,7 +77,9 @@ It is an implementation of machine learning algorithms under the Gradient Boosti
 
 • The R-squared (or coefficient of determination) measures how well the model's predictions fit the actual data compared to a simple baseline model that always predicts the mean of the target variable. An R-squared of 0 indicates that the model's predictions are no better than the baseline, while an R-squared of 1 indicates perfect fit. In this case, your model achieved an R-squared of 0.74, which suggests that it explains a significant portion of the variation in the target variable beyond what the baseline model could capture.
 
-![image](https://github.com/JuanPedroMtz/FinalProject/blob/main/Resources/XGBoost%20Regression.png)
+<p align="center">
+  <img src="https://github.com/JuanPedroMtz/FinalProject/blob/main/Resources/XGBoost%20Regression.png" />
+</p>
 
 The XGBoost model seems to have performed better than both the linear regression and random forest models in terms of RMSE and R-squared values.
 It's always a good idea to evaluate a model using multiple metrics and compare the results to make sure you are choosing the best one for your specific problem. Additionally, we could also try optimizing the hyperparameters of each model to see if you can improve their performance even further.
