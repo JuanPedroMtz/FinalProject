@@ -49,7 +49,9 @@ This approach models a linear relationship between a dependent variable and one 
 
 •	The R-squared value is negative, which is a sign that the model is performing worse than the baseline (a horizontal line at the mean of the target variable).
 
-![image](https://github.com/JuanPedroMtz/FinalProject/blob/main/Resources/Linear%20Regression.png)
+<p align="center">
+  <img src="https://github.com/JuanPedroMtz/FinalProject/blob/main/Resources/XGBoost%20Regression.png" />
+</p>
 
 These results suggest that the model is not a good fit for the data and that other modeling techniques may need to be explored. It's possible that the features used in the model are not sufficiently informative in predicting the target variable, or that a linear relationship is not appropriate for this problem.
 
